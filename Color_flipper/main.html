@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #brown {
+            background-color: brown;
+            color: white;
+        }
+        #red {
+            background-color: red;
+            color: white;
+        }
+        #orage {
+            background-color: orange;
+            color: white;
+        }
+        button {
+            border-radius: 5px;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <h3>Color Flipper</h3>
-    <button id="brown">Brown</button>
-    <button id="red">red</button>
-    <button id="orage">orage</button>
-    <button id="random">random</button>
+    <button id="brown" onClick="setColor('brown')">Brown</button>
+    <button id="red" onClick="setColor('red')">Red</button>
+    <button id="orage" onClick="setColor('orange')">Orage</button>
+    <button id="rainbow" onClick="setColor('brown')">Rainbow</button>
+    <button id="random" onClick="randomColor()">Random</button>
+
+    <script src="index.js"></script>
 </body>
 </html>
